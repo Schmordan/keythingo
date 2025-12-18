@@ -13,6 +13,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &default_layout;
+        zmk,matrix-transform = &transform0;
         };
 
     kscan0: kscan {
