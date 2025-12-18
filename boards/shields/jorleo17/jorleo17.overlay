@@ -7,6 +7,13 @@
 #include "jorleo17-layouts.dtsi"
 
 / {
+    
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &default_layout;
+        // Other chosen items
+        };
+
     kscan0: kscan {
         // If the hardware does not use a switch matrix, change this to the
         // appropriate driver and update the properties below to match.
