@@ -1,0 +1,6 @@
+if SHIELD_JORLEO17
+
+config ZMK_KEYBOARD_NAME
+    default "keythingo"
+
+endif # SHIELD_JORLEO17
