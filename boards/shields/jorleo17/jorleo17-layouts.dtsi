@@ -1,0 +1,29 @@
+// See https://zmk.dev/docs/development/hardware-integration/physical-layouts
+// for how to configure this.
+
+#include <physical_layouts.dtsi>
+
+/ {
+    tester_position_map {
+        compatible = "zmk,physical-layout-position-map";
+        complete;
+
+        pinout_map: pinout_positions {
+            physical-layout = <&default_layout>;
+            positions = <0 1>;
+        };
+
+    };
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+
+        // Edit this to define the positions and sizes of the keys, or remove it
+        // if your keyboard will not support ZMK Studio.
+        // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            ;
+    };
+};
